@@ -23,9 +23,9 @@
         {{ wtf.quick_form(to_do_form) }}
     </div>
 
-    <ul>
+    <ul class='list-group'>
         {% for to_do in to_dos %}
-            {{ macros.render_to_do(to_do) }}
+            {{ macros.render_to_do(to_do, delete_form, update_form) }}
         {% endfor %}
     </ul>
 {% endblock %}
